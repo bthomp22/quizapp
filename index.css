@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #ffffff;
+    background: url('https://cdn.spacetelescope.org/archives/images/wallpaper2/heic1509a.jpg') fixed;
+    color: white;
+    text-align: center;
+}
+/*header styling*/
+
+header {
+    width: 100%;
+    padding: 30px;
+    font-size: 20px;
+}
+/* Clearfix */
+
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+.score-question, .logos {
+    float: left;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.score-question {
+  width: 50%;
+}
+.logos{
+  width: 50%;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+}
+header ul li {
+    padding: 10px 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    word-wrap: none;
+}
+header ul {
+    text-align: right;
+    margin-top: 50px;
+}
+/*Quiz start screen styling*/
+
+.quizStart {
+    text-align: center;
+    width: 50%;
+    margin-top: 150px;
+    padding: 5px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+button {
+    padding: 20px;
+    border: 1px black;
+    background-color: #38A9AF;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+button:hover, button:focus {
+    background-color: #363946;
+    color: blue;
+}
+
+label {
+    background-color: rgb(80, 175, 56);
+    padding: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 22px;
+
+}
+label:hover, label:focus {
+    background-color: blue;
+}
+fieldset {
+    border: none;
+    text-align: center;
+}
+input {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: red;
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50%;
+}
+form button:hover, form button:focus {
+    background-color: #363946;
+    color: #ebca52
+}
+.answer {
+    flex: 1 1 auto;
+}
+.questionAnswerForm {
+    display: none;
+    width: 50%;
+}
+.correctFeedback {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px
+}
+.correctFeedback button {
+    width: 100%
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px
+}
+.pic {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px
+}
+h3 {
+    color: red;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.results img {
+    width: 150px;
+    height: auto;
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+.restartButton {
+    margin-top: 40px
+}
+@media screen and (max-width: 1190px) {
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo{
+      width: 50%;
+      height: auto;
+
+    }
+    label{
+      width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo {
+       width: 50%;
+       height: auto;
+    }
+    header ul {
+        margin: 10px;
+        text-align: center
+    }
+    header ul li {
+        padding: 10px;
+        font-size: 18px
+    }
+
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0
+    }
+    h2 {
+        font-size: 18px
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0
+    }
+
+    label {
+        font-size: 16px;
+        padding: 15px;
+        width:100%;
+    }
+    .pic {
+        width: 300px;
+        height: auto;
+
+    }
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px
+    }
+    .results p:first-of-type {
+        font-size: 18px
+    }
+    h3 {
+        font-size: 25px
+    }
+}

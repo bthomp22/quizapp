@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header role= 'Banner'>
+      <div class="logos">
+        <a href="index.html">
+          <img class="logo" src="http://cdn.shopify.com/s/files/1/0257/6087/products/Avengers-Icon_front_Single_Front.png?v=1523939355" alt="avengers icon"/>
+        </a>
+      </div>
+      <div class="score-question">
+        <ul>
+          <li>Question: <span class="questionNumber">0</span>/10</li>
+          <li>Score: <span class="score">0</span></li>
+        </ul>
+      </div>
+    </header>
+    <main role="main">
+      <div class="quizStart">
+        <h1>Can you save the world by answering these questions about the Avengers correctly?</h1>
+        <button type="button" class="startButton">Start</button>
+      </div>
+      <div class="questionAnswerForm"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
